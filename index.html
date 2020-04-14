@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dice Game 🎲</title>
 
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./public/css/styles.css">
 </head>
 <body>
     <nav class="navbar navbar-light bg-light nav-styles">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Dice Game 🎲</a>
+            <a class="navbar-brand logo-style" href="#">Dice Game <img src="./public/images/Microsoft-Dice-Emoji.png" alt=""> </a>
         </div>
     </nav>
 
@@ -22,11 +25,11 @@
 
         <div class="d-flex justify-content-around dice-area">
             <div class="dice1">
-                <img class="p1Dice" src="./public/images/D1.png" alt="Dice image">
+                <img class="p1Dice" src="./public/images/D1.png" alt="Dice image" draggable="false">
                 <h3 class="player">Player 1</h3>
             </div>
             <div class="dice2">
-                <img class="p2Dice" src="./public/images/D2.png" alt="Dice image">
+                <img class="p2Dice" src="./public/images/D2.png" alt="Dice image" draggable="false">
                 <h3 class="player">Player 2</h3>
             </div>
         </div>
@@ -34,10 +37,17 @@
         <div class="row">
             <button class="btn roll" type="submit">Roll</button>
         </div>
-        
+
+        <div class="footer">
+            <p>Made by: Craig Savage | 
+            <a href="https://github.com/craigsavage/DiceGame"><i class="fab fa-github"></i> Source Code</a></p>
+        </div>
     </div>
     
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
     
-    
+    <!-- Custom Scripts -->
+    <script src="./public/scripts/index.js"></script>
 </body>
 </html>

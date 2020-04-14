@@ -13,27 +13,46 @@
 body {
     background-color: var(--color-red);
     color: var(--color-almostWhite);
+    text-align: center;
+}
+
+a {
+    color: var(--color-almostWhite);
+}
+
+a:hover {
+    color: var(--color-almostWhite);
+    text-decoration: none;
 }
 
 .nav-styles {
     background-color: var(--color-almostWhite);
 }
 
+.logo-style {
+    font-size: 1.25rem;
+}
+
+.logo-style img {
+    width: 25px;
+}
+
 .winner-display {
-    padding: 100px 0 50px 0;
+    padding: 100px 0 75px 0;
 }
 
 .winner-text {
     font-size: 4rem;
     text-align: center;
 }
+
 .dice-area {
-    margin: auto;
-    
+    margin: auto; 
     width: 600px;
 }
 
 .p1Dice, .p2Dice {
+    cursor: pointer;
     width: 200px;
 }
 
@@ -47,14 +66,18 @@ body {
     background-color: var(--color-darkRed);
     border-radius: 10px;
     color: var(--color-almostWhite);
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
     padding: 10px 25px;
-    margin: 50px auto;
+    margin: 75px auto;
     text-transform: uppercase;
 }
 
 .roll:hover {
     background-color: var(--color-darkRed);
     color: var(--color-almostWhite);
+}
+
+.footer {
+    margin: 30px;
 }
